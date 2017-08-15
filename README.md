@@ -1,9 +1,11 @@
 # tf_metadynamics: Using Software for things they are not meant to be used for
 
-This repo is a fun weekend project designed to show how computational graphs can be turned into collective variables for enhanced sampling using existing libraries. This was done in two parts. 
+This repo is a fun weekend project designed to show how complex PyTorch computational graphs can be turned into collective variables inside Plumed. This was done in two parts. 
 
 PyTorchMetadynamics.ipynb 
-1). Implement [Metadynamics](https://en.wikipedia.org/wiki/Metadynamics) into [PyTorch](http://pytorch.org/) using a custom loss function depenedent on the history. The forces then become the negative of the derivatives which are automatically obtained via back propagation. The details are in the jupyter notebook PyTorchMetadynamics.This was performed on the Muller potential. 
+
+This Jupyter notebook encodes  [Metadynamics](https://en.wikipedia.org/wiki/Metadynamics) into [PyTorch](http://pytorch.org/) using a custom loss function depenedent on the history. The forces then become the negative of the derivatives which are automatically obtained via back propagation. This was performed on the Muller potential.  
 
 PlumedImagesNeuralNetwork.ipynb
-2). Implement a 3-layer Image Net Classifier into [Plumed](plumed.github.io), encode the images as molecular trajectories, and use Plumed to predict the raw scores.
+
+This Jupyter Notebook transfers a 3-layer Image Net PyTorch Classifier into [Plumed](plumed.github.io), encodes the images as molecular trajectories, and use Plumed to predict the un-normalized image scores. The plumed input file ```image_plumed.dat``` has the actual plumed neural network script.
