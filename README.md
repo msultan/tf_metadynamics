@@ -1,6 +1,6 @@
-# tf_metadynamics: Using Software for things they are not meant to be used for
+# tf_metadynamics: Using PyTorch to enhance molecular simulations and using Plumed to classify images
 
-This repo is a fun weekend project designed to show how complex PyTorch computational graphs can be turned into collective variables inside Plumed. This was done in two parts. 
+This repo is a fun weekend project designed to show how complex PyTorch computational graphs can be turned into collective variables inside Plumed. This was done in two parts.  
 
 PyTorchMetadynamics.ipynb 
 
